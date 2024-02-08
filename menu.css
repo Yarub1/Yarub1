@@ -1,0 +1,126 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+a.active {
+    color: #ffffff; /* لون الرابط عندما يكون نشطًا */
+    font-weight: bold; /* سماكة النص عندما يكون الرابط نشطًا */
+    text-decoration: underline; /* خط الزينة عندما يكون الرابط نشطًا */
+}
+
+a.active i {
+    margin-right: 5px; /* تباعد الرمز عندما يكون الرابط نشطًا */
+}
+
+a.active:hover {
+    color: #ff4500; /* لون الرابط عندما يتم التحويل إليه بواسطة الماوس */
+}
+
+/* NAVBAR*/
+nav {
+	width: 100vw;
+	padding: 2rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0 2rem #00000004;
+	position: fixed;
+	background: #000000;
+	z-index: 100;
+    top : 0;
+    left: 0;
+}
+
+/* Text part of the navbar */
+nav .text {
+	display: flex;
+	justify-content: space-between;
+	width: 90vw;
+	align-self: flex-start;
+}
+
+/* Website name */
+nav .text .logo {
+	font-size: 1.5rem;
+	font-weight: bolder;
+	color: #ffffff;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding: 0.5rem 1rem;
+	margin: -15px;
+	
+
+}
+
+/* Links in general */
+nav .text .links {
+	font-size: 1.25rem;
+	display: flex;
+	color: #ffffff;
+		font-size: smaller;
+
+}
+
+nav .text .links a {
+	padding: 0 1rem;
+	text-transform: uppercase;
+	color: #999;
+	transition: 0.2s ease;
+}
+
+nav .text .links a:hover {
+	color: #ffffff;
+	cursor: pointer;
+}
+
+/* Icons to open/close on mobile*/
+nav .toggle {
+	position: absolute;
+	right: 5vw;
+	top: 2rem;
+	display: none;
+	color: #ffffff;
+    cursor: pointer;
+    top: 10px;
+}
+
+nav .toggle span {
+	font-size: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+	
+	nav {
+		max-height: 2rem;
+		overflow: hidden;
+	}
+	
+	nav .text {
+		flex-direction: column;
+	}
+	
+	nav .text .logo {
+		padding-bottom: 2rem;
+	}
+	
+	nav .text .links {
+		flex-direction: column;
+	}
+	
+	nav .text .links a {
+		padding: 1rem 0;
+	}
+	
+	nav .toggle {
+		display: block;
+	}
+	
+}
+

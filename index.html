@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;400;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Playfair+Display:400,700" rel="stylesheet">
+    <title>Basics</title>
+
+</head>
+
+<body>
+    <section class="grid">
+        <!-- father grid-->
+
+        <!--first grid-->
+        <section class="grid-container">
+            <!--header-->
+            <header>
+                <nav id="navbar">
+                    <div class="text">
+                        <div class="logo">
+                            <a href="#">Yarub</a>
+                        </div>
+                        <div class="links">
+                            <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+                            <a href="#About"><i class="fas fa-info-circle"></i> About</a>
+                            <a href="#Services"><i class="fas fa-cogs"></i> Services</a>
+                            <a href="#Projects"><i class="fas fa-folder-open"></i> Projects</a>
+                            <a href="#Contact"><i class="fas fa-envelope"></i> Contact</a>
+                        </div>
+                    </div>
+                    <div class="toggle">
+                        <span id="open" onClick="expand()"><i class="fas fa-bars"></i></span>
+                        <span id="close" style="display: none;" onClick="refract()"><i class="fas fa-bars"></i></span>
+                    </div>
+                </nav>
+
+                <script>
+                    function expand() {
+                        document.getElementById("navbar").style.maxHeight = "100vh";
+                        document.getElementById("open").style.display = "none";
+                        document.getElementById("close").style.display = "block";
+                    }
+
+                    function refract() {
+                        document.getElementById("navbar").style.maxHeight = "2rem";
+                        document.getElementById("open").style.display = "block";
+                        document.getElementById("close").style.display = "none";
+                    }
+                </script>
+            </header>
+            <!--header-->
+
+            <!--main-->
+
+            <main>
+
+                <div class="logoo">
+                    <a href="#About">
+                        <img class="lo" src="img/logo.png" alt="logo">
+
+                    </a>
+                </div>
+
+                <div class="text">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="slog">
+                    <h1 class="slo">Yarub </h1>
+                    <!--
+                     -->
+                </div>
+
+            </main>
+
+            <!--main-->
+
+        </section>
+        <!--first grid-->
+
+        <!----------------------------------------------------------------->
+
+        <!--second grid-->
+
+        <section class="second-grid">
+
+            <!--about grid-->
+
+            <section class="about-container" id="About">
+
+                <div class="me">
+
+                    <div class="gradient">
+
+                        <section>
+                            <h2>Introduction</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error laborum autem velit
+                                assumenda iusto aut odit non labore. Blanditiis inventore expedita voluptatum voluptate
+                                ipsam unde impedit quibusdam facere voluptas hic..</p>
+                            <p class="space-maker">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit alias
+                                ab fugiat praesentium, quae totam dolores voluptatem dolore nesciunt doloremque corporis
+                                similique aliquid tempore odit. Vero, accusantium. Fugiat, eaque officiis..</p>
+                        </section>
+
+                        <section>
+                            <h2>Where I'm From</h2>
+                            <p class="space-maker">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                                facilis dolores praesentium a nobis amet, soluta ut? Corrupti magnam soluta eum, maxime,
+                                recusandae quam id rem minus quaerat nulla ratione..</p>
+                        </section>
+
+                        <section>
+                            <h2>More About Me</h2>
+                            <h3>What are my favorite hobbies?</h3>
+                            <p class="space-maker">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                minima quidem non beatae impedit similique dignissimos quisquam! Temporibus nobis
+                                dolorum sapiente magni sit autem, quo ducimus veritatis mollitia aperiam amet..</p>
+                            <h3>What's my dream job?</h3>
+                            <p class="space-maker">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam,
+                                pariatur. Deserunt ullam eveniet impedit iusto, nihil, in excepturi quasi ex consequatur
+                                veritatis numquam voluptatum voluptatem velit? Dolorem magnam quaerat perspiciatis.</p>
+
+                        </section>
+                    </div>
+
+                </div>
+
+            </section>
+            <!--about grid-->
+
+            <!--services grid-->
+            <section class="service-container">
+                <section class="cards-container" id="Services">
+                    <h2 class="title">Services</h2>
+
+                    <div class="content">
+                        <div class="card">
+                            <div class="icon">
+                                <i class="fas fa-edit"></i>
+                            </div>
+                            <div class="info">
+                                <h3>Script Writing</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <div class="info">
+                                <h3>Video Production</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="info">
+                                <h3>Curriculum Development</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <!--services grid-->
+
+            <!--Projects grid-->
+            <section class="projects" id="Projects">
+                <div class="pro">
+                    <h3 class="myp">My Projects</h3><br><br>
+                </div>
+                <section class="gallerybox">
+                    <section class="gallerybox-gallery">
+
+                        <figure class="gallerybox-item" id="picture1">
+                            <a href="index.html">
+                                <picture>
+                                    <figure class="gallerybox-item" id="picture1"></figure>
+                                </picture>
+                            </a>
+
+                            <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium qui itaque,
+                                esse facilis quo omnis, beatae corporis eaque veritatis, voluptatum molestiae! Quo quod
+                                neque voluptate consequuntur nobis tempora illo quasi.</figcaption>
+
+                            <a class="gallerybox-prev" href="#picture3">❰</a>
+                            <a class="gallerybox-next" href="#picture2">❱</a>
+                        </figure>
+                        <figure class="gallerybox-item" id="picture2">
+                            <a href="index.html">
+                                <picture>
+                                    <img src="https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/media/vs-2022/integer-math-intellisense.gif?view=vs-2022"
+                                        alt="" decoding="projects" />
+                                </picture>
+                            </a>
+
+                            <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nisi dolorum
+                                vitae at ipsum nemo earum ipsam voluptatem expedita harum quaerat voluptatibus, amet, in
+                                et debitis quam maxime dolores laborum!</figcaption>
+
+                            <a class="gallerybox-prev" href="#picture1">❰</a>
+                            <a class="gallerybox-next" href="#picture3">❱</a>
+                        </figure>
+                        <figure class="gallerybox-item" id="picture3">
+                            <a href="index.html">
+                                <picture>
+                                    <img src="https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/media/csharp-console-calculator-switch-code.png?view=vs-2022"
+                                        alt="" decoding="projects" />
+                                </picture>
+                            </a>
+
+                            <figcaption>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut voluptatem aut
+                                fugiat assumenda quibusdam quia unde laborum odio tempora totam omnis tempore adipisci,
+                                pariatur numquam officiis culpa corporis. Maxime, molestias!</figcaption>
+
+                            <a class="gallerybox-prev" href="#picture2">❰</a>
+                            <a class="gallerybox-next" href="#picture1">❱</a>
+                        </figure>
+                    </section>
+                </section>
+
+            </section>
+            <!--Projects grid-->
+
+                        <!--Contact-->
+
+
+<section class="contact-form" id="Contact">
+    <h3 class="contact-me">
+        Contact Me
+    </h3>
+
+           <form>      
+  <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+  <input name="email" type="text" class="feedback-input" placeholder="Email" />
+  <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+  <input type="submit" value="SUBMIT"/>
+</form>
+
+            </section><!--Contact-->
+
+
+        </section>
+        <!--second grid-->
+
+        <footer>
+            <footer class="footer">
+  <div class="footer__addr">
+    <h1 class="footer__logo">Something</h1>
+        
+    <h2>Contact</h2>
+    
+    <address>
+      5534 Somewhere In. The World 22193-10212<br>
+          
+      <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+    </address>
+  </div>
+  
+  <ul class="footer__nav">
+    <li class="nav__item">
+      <h2 class="nav__title">Media</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Online</a>
+        </li>
+
+        <li>
+          <a href="#">Print</a>
+        </li>
+            
+        <li>
+          <a href="#">Alternative Ads</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item nav__item--extra">
+      <h2 class="nav__title">Technology</h2>
+      
+      <ul class="nav__ul nav__ul--extra">
+        <li>
+          <a href="#">Hardware Design</a>
+        </li>
+        
+        <li>
+          <a href="#">Software Design</a>
+        </li>
+        
+        <li>
+          <a href="#">Digital Signage</a>
+        </li>
+        
+        <li>
+          <a href="#">Automation</a>
+        </li>
+        
+        <li>
+          <a href="#">Artificial Intelligence</a>
+        </li>
+        
+        <li>
+          <a href="#">IoT</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item">
+      <h2 class="nav__title">Legal</h2>
+      
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+        
+        <li>
+          <a href="#">Terms of Use</a>
+        </li>
+        
+        <li>
+          <a href="#">Sitemap</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  
+  <div class="legal">
+    <p>&copy; 2019 Yarub.</p>
+    
+   
+  </div>
+</footer>
+        </footer>
+    </section> <!-- father grid-->
+
+</body>
