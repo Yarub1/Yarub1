@@ -11,17 +11,17 @@ a {
 	color: #ffffff;
 }
 a.active {
-    color: #ffffff; /* لون الرابط عندما يكون نشطًا */
-    font-weight: bold; /* سماكة النص عندما يكون الرابط نشطًا */
-    text-decoration: underline; /* خط الزينة عندما يكون الرابط نشطًا */
+    color: #ffffff; 
+    font-weight: bold; 
+    text-decoration: underline;
 }
 
 a.active i {
-    margin-right: 5px; /* تباعد الرمز عندما يكون الرابط نشطًا */
+    margin-right: 5px; 
 }
 
 a.active:hover {
-    color: #ff4500; /* لون الرابط عندما يتم التحويل إليه بواسطة الماوس */
+    color: #ff4500; 
 }
 
 /* NAVBAR*/
